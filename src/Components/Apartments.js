@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { data } from "../data";
 import { Cards } from "./Cards";
+import  heart from "../images/heart-fill.svg";
 
 export const Apartments = ()=>{
     const [location,setLocation] = useState("")
@@ -45,6 +46,7 @@ export const Apartments = ()=>{
                     <button className={`ms-3 border-0 ${threeBhk ? 'bhk-col' : ""}`} onClick={handleFilterThree}>3 BHK</button>
                 </div>
             </div>
+            {/* <img src={heart} className="text-danger bg-white" alt=""/> */}
 
             {/* Cards */}
             <div className="row mt-5">
