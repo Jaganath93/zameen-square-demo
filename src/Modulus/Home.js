@@ -12,7 +12,7 @@ export const Home = ()=>{
 
     return(
         <div>
-            <div>
+            <div className="mt-5">
             <NavBar/>
             <Slider/>
             </div>
@@ -22,20 +22,28 @@ export const Home = ()=>{
               <Apartments/>
             </>
 
-            <>
-             <Projects/>
-            </>
 
+            {/* Projects Section */}
+            <>
+            <Projects/>
+            </>
+            
+
+            {/* Plots Section */}
             <>
               <Plots/>
             </>
-               
+
+
+            {/* Office Section */}
             <>
             <Office/>
             </>
 
+            
+            {/* Commercials Section */}
             <>
-             <Commercials/>
+            <Commercials/>
             </>
         </div>
     );

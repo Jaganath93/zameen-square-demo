@@ -6,7 +6,7 @@ export const NavBar = ()=>{
     const logo_md = "https://zameensquare.com/_next/static/media/zameen-mob-logo.74a5a37e.png"
 
     return(
-        <nav className="navbar navbar-expand-md bg-body-tertiary">
+        <nav className="navbar navbar-expand-md bg-body-tertiary fixed-top bg-light">
   <div className="container-fluid">
   <a className="navbar-brand" href="#">
     <div className="d-flex justify-content-between">
