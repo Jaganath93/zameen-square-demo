@@ -43,7 +43,7 @@ export const Commercials = ()=>{
         1024: { items: 3.5 },
     };
 
-    const carouselData = apartment.map((apt,i)=> <Cards data={apt} key={i} bhk={true}/>)
+    const carouselData = apartment.map((apt,i)=> <Cards data={apt} key={i} bhk={false}/>)
     
     const items = [...(carouselData)];
 
