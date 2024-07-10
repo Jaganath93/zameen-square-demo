@@ -73,6 +73,7 @@ export const Apartments = ()=>{
         mouseTracking
         items={items}
         responsive={responsive}
+        disableDotsControls={true}
     />
             </div>
 

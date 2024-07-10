@@ -22,9 +22,9 @@ export const Home = ()=>{
               <Apartments/>
             </>
 
-            {/* <>
+            <>
              <Projects/>
-            </> */}
+            </>
 
             <>
               <Plots/>

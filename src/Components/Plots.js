@@ -72,6 +72,7 @@ export const Plots = ()=>{
         mouseTracking
         items={items}
         responsive={responsive}
+        disableDotsControls={true}
     />
             </div>
 

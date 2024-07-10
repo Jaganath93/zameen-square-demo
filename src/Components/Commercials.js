@@ -73,6 +73,7 @@ export const Commercials = ()=>{
         mouseTracking
         items={items}
         responsive={responsive}
+        disableDotsControls={true}
     />
             </div>
 

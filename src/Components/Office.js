@@ -73,6 +73,7 @@ export const Office = ()=>{
         mouseTracking
         items={items}
         responsive={responsive}
+        disableDotsControls={true}
     />
             </div>
 

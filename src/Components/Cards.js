@@ -10,9 +10,11 @@ export const Cards = ({data,bhk})=>{
       if(id===data.id)  disLike(!like);
     }
 
+    const handleDragStart = (e) => e.preventDefault()
+
     return( bhk ?
         <div className="col">
-                <div className="card rounded border border-white bg-white" style={{width: '20rem'}}>
+                <div className="card rounded border border-white bg-white" style={{width: '20rem'}} onDragStart={handleDragStart} role="presentation">
                   <img src={data.img} className="card-img-top card-img"  alt={data.id}/>
                     <div className="card-body">
                     <div className="d-flex justify-content-between">
@@ -49,7 +51,7 @@ export const Cards = ({data,bhk})=>{
                 </div>
                 :
                 <div className="col">
-                <div className="card rounded border border-white bg-white" style={{width: '20rem'}}>
+                <div className="card rounded border border-white bg-white" style={{width: '20rem'}} onDragStart={handleDragStart} role="presentation">
                   <img src={data.img} className="card-img-top card-img"  alt={data.id}/>
                     <div className="card-body">
                       <div className="d-flex justify-content-between">
