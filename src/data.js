@@ -263,7 +263,3 @@ listedOn: "27/Sep/2021"
 
 ],
 }];
-
-
-
-// console.log(mysApartments);
