@@ -3,16 +3,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 
-export const Cards = ({data,bhk})=>{
+
+export const CardsDemo = ({data,bhk})=>{
    const [like,disLike] = useState(false);
 
     const handleLike = (id)=>{
       if(id===data.id)  disLike(!like);
-    }
+    };
+
+
+    const handleDragStart = (e) => e.preventDefault()
+    
 
     return( bhk ?
         <div className="col">
-                <div className="card rounded border border-white bg-white" style={{width: '20rem'}}>
+                <div className="card rounded border border-white bg-white" style={{width: '20rem'}} onDragStart={handleDragStart} role="presentation">
                   <img src={data.img} className="card-img-top card-img"  alt={data.id}/>
                     <div className="card-body">
                     <div className="d-flex justify-content-between">
@@ -37,12 +42,12 @@ export const Cards = ({data,bhk})=>{
                             <div>
                                 <p></p>
                             </div>
-                         <div className="d-flex justify-content-between mb-0">
+                         <div className="d-flex justify-content-between">
                             <div>
                                 <h6 className="text-muted">Listed On</h6>
                                 <p>{data.listedOn}</p>
                             </div>
-                         <div><button href="#" className="btn btn-primary">View Details</button></div>
+                         <button href="#" className="btn btn-primary">View Details</button>
                          </div>
                     </div>
                </div>
@@ -79,9 +84,7 @@ export const Cards = ({data,bhk})=>{
                                 <h6 className="text-muted">Listed On</h6>
                                 <p>{data.listedOn}</p>
                             </div>
-                         <div>
                          <button href="#" className="btn btn-primary">View Details</button>
-                         </div>
                          </div>
                     </div>
                </div>

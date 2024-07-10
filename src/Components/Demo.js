@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { data } from "../data";
-import { Cards } from "./Cards";
+// import { Cards } from "./Cards";
+import { CardsDemo } from "./CardsDemo";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-export const Apartments = ()=>{
+export const Demo = ()=>{
     const [location,setLocation] = useState("")
     const [apartment, setApartMents] = useState([]);
     const [twoBhk, setTwoBhk] = useState(false);
@@ -17,6 +18,20 @@ export const Apartments = ()=>{
         const mysApartments = filteredData[0].apartments;
         setApartMents(mysApartments);
     },[]);
+
+    const responsive = {
+        0: { items: 1 },
+        568: { items: 2 },
+        1024: { items: 3 },
+    };
+    
+    const data1 = apartment.map((apt,i)=> <CardsDemo data={apt} key={i} bhk={true}/>)
+    // const data2 = []
+    
+    // const items = [...data2.concat(data1)];
+
+    
+    const items = [...(data1)];
 
     const handleFilterTwo = ()=> {
         setThreeBhk(false);
@@ -34,19 +49,8 @@ export const Apartments = ()=>{
         const apartmentArray = filteredData[0].apartments;
         const apartmentThreeBhk = apartmentArray?.filter((apt)=> apt.bhk == "3");
         if(apartmentThreeBhk.length>0) setApartMents(apartmentThreeBhk) 
-    }
-
-    //Carousel Part
-
-    const responsive = {
-        0: { items: 1 },
-        568: { items: 2 },
-        1024: { items: 3.5 },
     };
-
-    const carouselData = apartment.map((apt,i)=> <Cards data={apt} key={i} bhk={true}/>)
-    
-    const items = [...(carouselData)];
+     
 
     return(
         <div className="container-fluid">
@@ -62,12 +66,6 @@ export const Apartments = ()=>{
             {/* <img src={heart} className="text-danger bg-white" alt=""/> */}
 
             {/* Cards */}
-            {/* <div className="row mt-5">
-                {apartment.map((apt,i)=> <Cards data={apt} key={i} bhk={true}/>)}
-            </div> */}
-
-
-            {/* Carousel */}
             <div className="row mt-5">      
                 <AliceCarousel
         mouseTracking
@@ -75,7 +73,6 @@ export const Apartments = ()=>{
         responsive={responsive}
     />
             </div>
-
         </div>
     );
 }
