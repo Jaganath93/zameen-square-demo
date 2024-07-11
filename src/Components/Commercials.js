@@ -20,7 +20,7 @@ export const Commercials = ({location})=>{
     const handleFilterTwo = ()=> {
         setSqft2(false);
         setSqft1(true);
-        const filteredData = data.filter((dt)=>dt.location == "Mysuru");
+        const filteredData = data.filter((dt)=>dt.location == location);
         const apartmentArray = filteredData[0].commercials;
         const apartmentTwoBhk = apartmentArray?.filter((apt)=> apt.sqft > 1199);
         if(apartmentTwoBhk.length>0) setApartMents(apartmentTwoBhk); 
@@ -29,11 +29,13 @@ export const Commercials = ({location})=>{
     const handleFilterThree = ()=> {
         setSqft1(false);
         setSqft2(true);
-        const filteredData = data.filter((dt)=>dt.location == "Mysuru");
+        const filteredData = data.filter((dt)=>dt.location == location);
         const apartmentArray = filteredData[0].commercials;
         const apartmentThreeBhk = apartmentArray?.filter((apt)=> apt.sqft> 2399);
         if(apartmentThreeBhk.length>0) setApartMents(apartmentThreeBhk); 
-    }//Carousel Part
+    }
+    
+    //Carousel Part
 
     const responsive = {
         0: { items: 1 },

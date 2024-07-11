@@ -19,7 +19,7 @@ export const Apartments = ({location})=>{
     const handleFilterTwo = ()=> {
         setThreeBhk(false);
         setTwoBhk(true);
-        const filteredData = data.filter((dt)=>dt.location == "Mysuru");
+        const filteredData = data.filter((dt)=>dt.location == location);
         const apartmentArray = filteredData[0].apartments;
         const apartmentTwoBhk = apartmentArray?.filter((apt)=> apt.bhk == "2");
         if(apartmentTwoBhk.length>0) setApartMents(apartmentTwoBhk) 
@@ -28,7 +28,7 @@ export const Apartments = ({location})=>{
     const handleFilterThree = ()=> {
         setTwoBhk(false);
         setThreeBhk(true);
-        const filteredData = data.filter((dt)=>dt.location == "Mysuru");
+        const filteredData = data.filter((dt)=>dt.location == location);
         const apartmentArray = filteredData[0].apartments;
         const apartmentThreeBhk = apartmentArray?.filter((apt)=> apt.bhk == "3");
         if(apartmentThreeBhk.length>0) setApartMents(apartmentThreeBhk) 
