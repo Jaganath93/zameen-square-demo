@@ -14,6 +14,8 @@ export const Projects = ({location})=>{
         const filteredData = data.filter((dt)=>dt.location == location);
         // const storedLocation = filteredData[0].location;
         // setLocation(storedLocation);
+        const filteredDescription = filteredData[0].projects.description;
+        setDescription(filteredDescription);
         const mysApartments = filteredData[0].projects.data;
         setApartMents(mysApartments);
     },[location]);

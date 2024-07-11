@@ -63,7 +63,7 @@ export const data = [
 ],
 
    projects:{
-    description:"Plot, Residential Houses, Villas and Apartments that worth every penny of your investment. Explore the top-quality and only on Zameen Square exclusive properties here.",
+    description:"Plots, Residential Houses, Villas and Apartments that worth every penny of your investment. Explore the top-quality and only on Zameen Square exclusive properties here.",
     data:[
         {
             id:200,
@@ -588,5 +588,5 @@ listedOn: "27/Sep/2021"
   },
 
 ]}
-},
+}
 ];
