@@ -12,3 +12,27 @@
     border-radius: 10px;
 }
 
+.agent-img{
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.agent-card{
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.agent-card:hover{
+    transform: scale(1.1);
+}
+
+.img-radius{
+    border-radius: 20px;
+}
+
+/* .subscribe{
+    background: url("https://zameensquare.com/_next/static/media/subscribe.b5ba2647.png");
+} */
+

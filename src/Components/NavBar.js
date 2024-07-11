@@ -1,18 +1,38 @@
+import { useState } from "react";
+import { data } from "../data";
 
 
-export const NavBar = ()=>{
+export const NavBar = ({location,setLocation})=>{
     
     const logo = "https://zameensquare.com/_next/static/media/zameen-logo.be926326.png";
-    const logo_md = "https://zameensquare.com/_next/static/media/zameen-mob-logo.74a5a37e.png"
+    const logo_md = "https://zameensquare.com/_next/static/media/zameen-mob-logo.74a5a37e.png";
+
+    
+
+    const handleLocation = (location)=> setLocation(location);
+
+
 
     return(
         <nav className="navbar navbar-expand-md bg-body-tertiary fixed-top bg-light">
   <div className="container-fluid">
   <a className="navbar-brand" href="#">
     <div className="d-flex justify-content-between">
+      <div>
       <img src={logo} alt="Logo" className="d-inline-block align-text-top d-none d-lg-block nav-logo"/>
       <img src={logo_md} alt="Logo" className="d-inline-block align-text-top d-block d-lg-none nav-logo"/>
-      <span className="pt-2"><a className="navbar-brand fs-6 ps-3" href="#">Bengaluru</a></span>
+      </div>
+      <div className="mt-2">
+      <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle bg-white text-dark border-0 ms-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    {location}
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    {data.map((dt,i)=> <li class="dropdown-item" key={i} onClick={()=>handleLocation(dt.location)}>{dt.location}</li>)}
+  </ul>
+</div>
+      </div>
       </div>
     </a>
     {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> */}

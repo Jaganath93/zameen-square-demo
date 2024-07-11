@@ -5,22 +5,18 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import { ProjectCards } from "./ProjectCards";
 
 
-export const Projects = ()=>{
-    const [location,setLocation] = useState("");
+export const Projects = ({location})=>{
+    // const [location,setLocation] = useState("");
     const [description,setDescription] = useState("");
     const [apartment, setApartMents] = useState([]);
 
     useEffect(()=>{         
-        const filteredData = data.filter((dt)=>dt.location == "Mysuru");
-        const storedLocation = filteredData[0].location;
-        setLocation(storedLocation);
-
-        const storedDescription = filteredData[0].projects.description;
-        setDescription(storedDescription);
-
-        const myPlots = filteredData[0].projects.data;
-        setApartMents(myPlots);
-    },[]);
+        const filteredData = data.filter((dt)=>dt.location == location);
+        // const storedLocation = filteredData[0].location;
+        // setLocation(storedLocation);
+        const mysApartments = filteredData[0].projects.data;
+        setApartMents(mysApartments);
+    },[location]);
 
     //Carousel Part
 

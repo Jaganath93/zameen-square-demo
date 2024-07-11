@@ -4,19 +4,17 @@ import { Cards } from "./Cards";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-export const Apartments = ()=>{
-    const [location,setLocation] = useState("")
+export const Apartments = ({location})=>{
+    // const [location,setLocation] = useState()
     const [apartment, setApartMents] = useState([]);
     const [twoBhk, setTwoBhk] = useState(false);
     const [threeBhk, setThreeBhk] = useState(false);
 
     useEffect(()=>{
-        const filteredData = data.filter((dt)=>dt.location == "Mysuru");
-        const storedLocation = filteredData[0].location;
-        setLocation(storedLocation);
+        const filteredData = data.filter((dt)=>dt.location == location);
         const mysApartments = filteredData[0].apartments;
         setApartMents(mysApartments);
-    },[]);
+    },[location]);
 
     const handleFilterTwo = ()=> {
         setThreeBhk(false);

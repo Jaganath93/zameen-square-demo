@@ -5,19 +5,17 @@ import { Cards } from "./Cards";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-export const Office = ()=>{
-    const [location,setLocation] = useState("");
+export const Office = ({location})=>{
+    // const [location,setLocation] = useState("");
     const [apartment, setApartMents] = useState([]);
     const [sqft1, setSqft1] = useState(false);
     const [sqft2, setSqft2] = useState(false);
 
     useEffect(()=>{
-        const filteredData = data.filter((dt)=>dt.location == "Mysuru");
-        const storedLocation = filteredData[0].location;
-        setLocation(storedLocation);
+        const filteredData = data.filter((dt)=>dt.location == location);
         const myPlots = filteredData[0].office;
         setApartMents(myPlots);
-    },[]);
+    },[location]);
 
     const handleFilterTwo = ()=> {
         setSqft2(false);

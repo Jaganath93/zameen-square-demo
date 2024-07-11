@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { Agents } from "../Components/Agents";
 import { Apartments } from "../Components/Apartments";
 import { Commercials } from "../Components/Commercials";
 import { Demo } from "../Components/Demo";
@@ -6,44 +8,57 @@ import { Office } from "../Components/Office";
 import { Plots } from "../Components/Plots";
 import { Projects } from "../Components/Projects";
 import { Slider } from "../Components/Slider";
+import { Subscribe } from "../Components/Subscribe";
 
 
 export const Home = ()=>{
+  
+  const [location,setLocation] = useState("Mysuru");
 
     return(
         <div>
             <div className="mt-5">
-            <NavBar/>
+            <NavBar location={location} setLocation={setLocation}/>
             <Slider/>
             </div>
 
             {/* Apartments Section*/}
             <>
-              <Apartments/>
+              <Apartments location={location}/>
             </>
 
 
             {/* Projects Section */}
             <>
-            <Projects/>
+            <Projects location={location}/>
             </>
             
 
             {/* Plots Section */}
             <>
-              <Plots/>
+              <Plots location={location}/>
             </>
 
 
             {/* Office Section */}
             <>
-            <Office/>
+            <Office location={location}/>
             </>
 
             
             {/* Commercials Section */}
             <>
-            <Commercials/>
+            <Commercials location={location}/>
+            </>
+
+
+            {/* Agents Section */}
+            <>
+            <Agents location={location}/>
+            </>
+
+            <>
+             <Subscribe/>
             </>
         </div>
     );
