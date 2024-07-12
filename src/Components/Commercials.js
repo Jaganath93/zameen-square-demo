@@ -8,6 +8,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 export const Commercials = ({location})=>{
     // const [location,setLocation] = useState("");
     const [apartment, setApartMents] = useState([]);
+    const [all,setAll] = useState(true);
     const [sqft1, setSqft1] = useState(false);
     const [sqft2, setSqft2] = useState(false);
 
@@ -19,6 +20,7 @@ export const Commercials = ({location})=>{
 
     const handleFilterTwo = ()=> {
         setSqft2(false);
+        setAll(false)
         setSqft1(true);
         const filteredData = data.filter((dt)=>dt.location == location);
         const apartmentArray = filteredData[0].commercials;
@@ -28,11 +30,21 @@ export const Commercials = ({location})=>{
 
     const handleFilterThree = ()=> {
         setSqft1(false);
+        setAll(false);
         setSqft2(true);
         const filteredData = data.filter((dt)=>dt.location == location);
         const apartmentArray = filteredData[0].commercials;
         const apartmentThreeBhk = apartmentArray?.filter((apt)=> apt.sqft> 2399);
         if(apartmentThreeBhk.length>0) setApartMents(apartmentThreeBhk); 
+    }
+
+    const handleFilterAll = ()=>{
+        setSqft1(false);
+        setSqft2(false);
+        setAll(true);
+        const filteredData = data.filter((dt)=>dt.location == location);
+        const apartmentArray = filteredData[0].commercials;
+        setApartMents(apartmentArray);
     }
     
     //Carousel Part
@@ -56,8 +68,9 @@ export const Commercials = ({location})=>{
                 <h3 className="fw-normal">Commercials in {location}</h3>
                 </div>
                 <div className="d-none d-sm-block col-4 col-md-6">
-                    <button className={`border-0 ${sqft1 ? 'bhk-col' : ""}`} onClick={handleFilterTwo}>1200 Sqft</button>
-                    <button className={`ms-3 border-0 ${sqft2 ? 'bhk-col' : ""}`} onClick={handleFilterThree}>2400 Sqft</button>
+                <button className={`border-0 ${all ? 'bhk-col' : ""}`} onClick={handleFilterAll}>All</button>
+                    <button className={`ms-1 ms-md-3 border-0 ${sqft1 ? 'bhk-col' : ""}`} onClick={handleFilterTwo}>1200 Sqft</button>
+                    <button className={`ms-1 ms-md-3 border-0 ${sqft2 ? 'bhk-col' : ""}`} onClick={handleFilterThree}>2400 Sqft</button>
                 </div>
             </div>
             {/* <img src={heart} className="text-danger bg-white" alt=""/> */}

@@ -89,8 +89,20 @@ export const data = [
     ]
    },
 
-   plots: [{
-    id: 300,
+   plots: [
+    {
+        id: 300,
+        img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/61292250-72f5-423d-8848-aff300950061.jpg",
+        price:"70 Lac",
+        sqft: 1100,
+        position: 'North',
+        site: "Corner Site",
+        area:"Vijayanagar,Mysuru",
+        address:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Mysuru - 570017",
+        listedOn: "27/Sep/2022"
+    },
+    {
+    id: 301,
     img:"https://s3-alpha-sig.figma.com/img/9061/1c0b/740cfe7923702cf61e5b5a614f947e22?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hQqJRWAsdaoiMGAWIjHHyolvgeo5iluApJ6UXMrjgixu2OZtPuGqNr1~IrpKCtAKx9EKJmHs9zZkb2zXB0kyvAgc2aXYAG3UhffaPv0elEshdMswuGMg4IL27NOfer4DGuYfUsXPApztRnukZlrudUfsiIYLVSDXnceHqep2I7XT~rWoylIYMO7ILtHuBmr~fq08zLftPqGYso7oVNYTn5HUzJV4UXY8ZsnFbGDZPHwBOrNXzNvTSBE7grpaNDmrhnQ7~JGWtS09KXbZAeqdcenCqmZwKKpjsq7ll-AoUa3T1Q4mfDzMq066JVJpgJ-OlZxX4vzLEej9T4oqQkSj1A__",
     price:"70 Lac",
     sqft: 1200,
@@ -101,7 +113,7 @@ export const data = [
     listedOn: "27/Sep/2022"
 },
 {
-id: 301,
+id: 302,
 img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bf30e5c6-98ae-4b67-8e2e-f7b73335e662.png",
 price:"70 Lac",
 bhk: '2',
@@ -114,7 +126,7 @@ listedOn: "27/Sep/2021"
 },
 
 {
-    id: 302,
+    id: 303,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/61292250-72f5-423d-8848-aff300950061.jpg",
     price:"70 Lac",
     bhk: '2',
@@ -127,7 +139,7 @@ listedOn: "27/Sep/2021"
     },
 
     {
-        id: 303,
+        id: 304,
         img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/5bc17363-1268-4551-a551-2c2015b27d81.jpg",
         price:"70 Lac",
         bhk: '2',
@@ -164,8 +176,19 @@ wash: '3',
 listedOn: "27/Sep/2021"
 }],
 
-   office: [{
-    id: 500,
+   office: [
+    {
+        id: 500,
+        img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bf30e5c6-98ae-4b67-8e2e-f7b73335e662.png",
+        price:"70 Lac",
+        area:"Vijayanagar,Mysuru",
+        address:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Mysuru - 570017",
+        sqft: 1100,
+        wash: '3',
+        listedOn: "27/Sep/2021"
+    },
+    {
+    id: 501,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/95247586-7ee0-4639-ad3e-1d93c4632fa3.jpg",
     price:"70 Lac",
     area:"Vijayanagar,Mysuru",
@@ -175,7 +198,7 @@ listedOn: "27/Sep/2021"
     listedOn: "27/Sep/2021"
 },
 {
-id: 501,
+id: 502,
 img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/6624da9d-90e0-41e0-9534-180c8d122b49.png",
 price:"70 Lac",
 area:"Vijayanagar,Mysuru",
@@ -186,7 +209,7 @@ listedOn: "27/Sep/2021"
 },
 
 {
-    id: 502,
+    id: 503,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/6624da9d-90e0-41e0-9534-180c8d122b49.png",
     price:"70 Lac",
     area:"Vijayanagar,Mysuru",
@@ -197,7 +220,7 @@ listedOn: "27/Sep/2021"
     },
 
     {
-        id: 503,
+        id: 504,
         img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/6624da9d-90e0-41e0-9534-180c8d122b49.png",
         price:"70 Lac",
         area:"Vijayanagar,Mysuru",
@@ -208,8 +231,21 @@ listedOn: "27/Sep/2021"
         },
 
 ],
-   commercials: [{
-    id: 600,
+   commercials: [
+    {
+        id: 600,
+        img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/95247586-7ee0-4639-ad3e-1d93c4632fa3.jpg",
+        price:"70 Lac",
+        area:"Vijayanagar,Mysuru",
+        address:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Mysuru - 570017",
+        sqft: 1100,
+        position: 'North',
+        site: "Corner Site",
+        wash: '3',
+        listedOn: "27/Sep/2021"
+    },
+    {
+    id: 601,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bdf50f56-ea45-458f-a9ab-d0be47b2eff4.jpg",
     price:"70 Lac",
     area:"Vijayanagar,Mysuru",
@@ -221,7 +257,7 @@ listedOn: "27/Sep/2021"
     listedOn: "27/Sep/2021"
 },
 {
-id: 601,
+id: 602,
 img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bf30e5c6-98ae-4b67-8e2e-f7b73335e662.png",
 price:"70 Lac",
 bhk: '2',
@@ -234,7 +270,7 @@ wash: '3',
 listedOn: "27/Sep/2021"
 },
 {
-    id: 602,
+    id: 603,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/95247586-7ee0-4639-ad3e-1d93c4632fa3.jpg",
     price:"70 Lac",
     bhk: '2',
@@ -248,7 +284,7 @@ listedOn: "27/Sep/2021"
     },
 
     {
-        id: 603,
+        id: 604,
         img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/95247586-7ee0-4639-ad3e-1d93c4632fa3.jpg",
         price:"70 Lac",
         bhk: '2',
@@ -297,8 +333,20 @@ listedOn: "27/Sep/2021"
 {
     id:2,
     location:"Bengaluru",
-    apartments: [{
-        id: 1000,
+    apartments: [
+        {
+            id: 1000,
+            img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/5bc17363-1268-4551-a551-2c2015b27d81.jpg",
+            price:"70 Lac",
+            bhk: '1',
+            area:"HSR Layout,Bengaluru",
+            address:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Bengaluru - 570017",
+            sqft: '2400',
+            wash: '3',
+            listedOn: "27/Sep/2021"
+    },
+        {
+        id: 1001,
         img:"https://s3-alpha-sig.figma.com/img/9061/1c0b/740cfe7923702cf61e5b5a614f947e22?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hQqJRWAsdaoiMGAWIjHHyolvgeo5iluApJ6UXMrjgixu2OZtPuGqNr1~IrpKCtAKx9EKJmHs9zZkb2zXB0kyvAgc2aXYAG3UhffaPv0elEshdMswuGMg4IL27NOfer4DGuYfUsXPApztRnukZlrudUfsiIYLVSDXnceHqep2I7XT~rWoylIYMO7ILtHuBmr~fq08zLftPqGYso7oVNYTn5HUzJV4UXY8ZsnFbGDZPHwBOrNXzNvTSBE7grpaNDmrhnQ7~JGWtS09KXbZAeqdcenCqmZwKKpjsq7ll-AoUa3T1Q4mfDzMq066JVJpgJ-OlZxX4vzLEej9T4oqQkSj1A__",
         price:"70 Lac",
         bhk: '3',
@@ -309,7 +357,7 @@ listedOn: "27/Sep/2021"
         listedOn: "27/Sep/2021"
 },
 {
-    id: 1001,
+    id: 1002,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/5bc17363-1268-4551-a551-2c2015b27d81.jpg",
     price:"70 Lac",
     bhk: '2',
@@ -320,7 +368,7 @@ listedOn: "27/Sep/2021"
     listedOn: "27/Sep/2021"
 },
 {
-    id: 1002,
+    id: 1003,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/61292250-72f5-423d-8848-aff300950061.jpg",
     price:"70 Lac",
     bhk: '2',
@@ -331,7 +379,7 @@ listedOn: "27/Sep/2021"
     listedOn: "27/Sep/2021"
 },
 {
-    id: 1003,
+    id: 1004,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bf30e5c6-98ae-4b67-8e2e-f7b73335e662.png",
     price:"70 Lac",
     bhk: '2',
@@ -343,7 +391,7 @@ listedOn: "27/Sep/2021"
 },
 
 {
-    id: 1004,
+    id: 1005,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bf30e5c6-98ae-4b67-8e2e-f7b73335e662.png",
     price:"70 Lac",
     bhk: '2',
@@ -384,8 +432,20 @@ listedOn: "27/Sep/2021"
     ]
    },
 
-   plots: [{
-    id: 1200,
+   plots: [
+    {
+        id: 1200,
+        img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/61292250-72f5-423d-8848-aff300950061.jpg",
+        price:"70 Lac",
+        sqft: 1100,
+        position: 'North',
+        site: "Corner Site",
+        area:"Vijayanagar,Bengaluru",
+        address:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Bengaluru - 570017",
+        listedOn: "27/Sep/2022"
+    },
+    {
+    id: 1201,
     img:"https://s3-alpha-sig.figma.com/img/9061/1c0b/740cfe7923702cf61e5b5a614f947e22?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hQqJRWAsdaoiMGAWIjHHyolvgeo5iluApJ6UXMrjgixu2OZtPuGqNr1~IrpKCtAKx9EKJmHs9zZkb2zXB0kyvAgc2aXYAG3UhffaPv0elEshdMswuGMg4IL27NOfer4DGuYfUsXPApztRnukZlrudUfsiIYLVSDXnceHqep2I7XT~rWoylIYMO7ILtHuBmr~fq08zLftPqGYso7oVNYTn5HUzJV4UXY8ZsnFbGDZPHwBOrNXzNvTSBE7grpaNDmrhnQ7~JGWtS09KXbZAeqdcenCqmZwKKpjsq7ll-AoUa3T1Q4mfDzMq066JVJpgJ-OlZxX4vzLEej9T4oqQkSj1A__",
     price:"70 Lac",
     sqft: 1200,
@@ -396,7 +456,7 @@ listedOn: "27/Sep/2021"
     listedOn: "27/Sep/2022"
 },
 {
-id: 1201,
+id: 1202,
 img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bf30e5c6-98ae-4b67-8e2e-f7b73335e662.png",
 price:"70 Lac",
 bhk: '2',
@@ -409,7 +469,7 @@ listedOn: "27/Sep/2021"
 },
 
 {
-    id: 1202,
+    id: 1203,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/61292250-72f5-423d-8848-aff300950061.jpg",
     price:"70 Lac",
     bhk: '2',
@@ -422,7 +482,7 @@ listedOn: "27/Sep/2021"
     },
 
     {
-        id: 1203,
+        id: 1204,
         img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/5bc17363-1268-4551-a551-2c2015b27d81.jpg",
         price:"70 Lac",
         bhk: '2',
@@ -459,8 +519,19 @@ wash: '3',
 listedOn: "27/Sep/2021"
 }],
 
-   office: [{
-    id: 1400,
+   office: [
+    {
+        id: 1401,
+        img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/95247586-7ee0-4639-ad3e-1d93c4632fa3.jpg",
+        price:"70 Lac",
+        area:"HSR Layout,Bengaluru",
+        address:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Bengaluru - 570017",
+        sqft: 1100,
+        wash: '3',
+        listedOn: "27/Sep/2021"
+    },
+    {
+    id: 1402,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/95247586-7ee0-4639-ad3e-1d93c4632fa3.jpg",
     price:"70 Lac",
     area:"HSR Layout,Bengaluru",
@@ -470,7 +541,7 @@ listedOn: "27/Sep/2021"
     listedOn: "27/Sep/2021"
 },
 {
-id: 1401,
+id: 1403,
 img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/6624da9d-90e0-41e0-9534-180c8d122b49.png",
 price:"70 Lac",
 area:"HSR Layout,Bengaluru",
@@ -481,7 +552,7 @@ listedOn: "27/Sep/2021"
 },
 
 {
-    id: 1402,
+    id: 1404,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/6624da9d-90e0-41e0-9534-180c8d122b49.png",
     price:"70 Lac",
     area:"HSR Layout,Bengaluru",
@@ -492,7 +563,7 @@ listedOn: "27/Sep/2021"
     },
 
     {
-        id: 1403,
+        id: 1405,
         img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/6624da9d-90e0-41e0-9534-180c8d122b49.png",
         price:"70 Lac",
         area:"HSR Layout,Bengaluru",
@@ -503,8 +574,21 @@ listedOn: "27/Sep/2021"
         },
 
 ],
-   commercials: [{
-    id: 1500,
+   commercials: [
+    {
+        id: 1500,
+        img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bf30e5c6-98ae-4b67-8e2e-f7b73335e662.png",
+        price:"70 Lac",
+        area:"HSR Layout,Bengaluru",
+        address:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Bengaluru - 570017",
+        sqft: 1100,
+        position: 'North',
+        site: "Corner Site",
+        wash: '3',
+        listedOn: "27/Sep/2021"
+    },
+    {
+    id: 1501,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bdf50f56-ea45-458f-a9ab-d0be47b2eff4.jpg",
     price:"70 Lac",
     area:"HSR Layout,Bengaluru",
@@ -516,7 +600,7 @@ listedOn: "27/Sep/2021"
     listedOn: "27/Sep/2021"
 },
 {
-id: 1501,
+id: 1502,
 img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/bf30e5c6-98ae-4b67-8e2e-f7b73335e662.png",
 price:"70 Lac",
 bhk: '2',
@@ -529,7 +613,7 @@ wash: '3',
 listedOn: "27/Sep/2021"
 },
 {
-    id: 1502,
+    id: 1503,
     img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/95247586-7ee0-4639-ad3e-1d93c4632fa3.jpg",
     price:"70 Lac",
     bhk: '2',
@@ -543,7 +627,7 @@ listedOn: "27/Sep/2021"
     },
 
     {
-        id: 1503,
+        id: 1504,
         img:"https://s3.ap-south-1.amazonaws.com/zs2.0/PropertyImages/95247586-7ee0-4639-ad3e-1d93c4632fa3.jpg",
         price:"70 Lac",
         bhk: '2',

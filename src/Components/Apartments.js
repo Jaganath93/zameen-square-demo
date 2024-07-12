@@ -7,6 +7,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 export const Apartments = ({location})=>{
     // const [location,setLocation] = useState()
     const [apartment, setApartMents] = useState([]);
+    const [all, setAll] = useState(true);
     const [twoBhk, setTwoBhk] = useState(false);
     const [threeBhk, setThreeBhk] = useState(false);
 
@@ -18,6 +19,7 @@ export const Apartments = ({location})=>{
 
     const handleFilterTwo = ()=> {
         setThreeBhk(false);
+        setAll(false);
         setTwoBhk(true);
         const filteredData = data.filter((dt)=>dt.location == location);
         const apartmentArray = filteredData[0].apartments;
@@ -27,12 +29,25 @@ export const Apartments = ({location})=>{
 
     const handleFilterThree = ()=> {
         setTwoBhk(false);
+        setAll(false);
         setThreeBhk(true);
         const filteredData = data.filter((dt)=>dt.location == location);
         const apartmentArray = filteredData[0].apartments;
         const apartmentThreeBhk = apartmentArray?.filter((apt)=> apt.bhk == "3");
         if(apartmentThreeBhk.length>0) setApartMents(apartmentThreeBhk) 
+    };
+
+    const handleFilterAll = ()=>{
+        setTwoBhk(false);
+        setThreeBhk(false);
+        setAll(true);
+        const filteredData = data.filter((dt)=>dt.location == location);
+        const apartmentArray = filteredData[0].apartments;
+        setApartMents(apartmentArray)
     }
+
+
+    
 
     //Carousel Part
 
@@ -53,8 +68,9 @@ export const Apartments = ({location})=>{
                 <h3 className="fw-normal">Popular Apartment in {location}</h3>
                 </div>
                 <div className="d-none d-sm-block col-4 col-md-6">
-                    <button className={`border-0 ${twoBhk ? 'bhk-col' : ""}`} onClick={handleFilterTwo}>2 BHK</button>
-                    <button className={`ms-3 border-0 ${threeBhk ? 'bhk-col' : ""}`} onClick={handleFilterThree}>3 BHK</button>
+                    <button className={`border-0 ${all ? 'bhk-col' : ""}`} onClick={handleFilterAll}>All</button>
+                    <button className={`ms-1 ms-md-3 border-0 ${twoBhk ? 'bhk-col' : ""}`} onClick={handleFilterTwo}>2 BHK</button>
+                    <button className={`ms-1 ms-md-3 border-0 ${threeBhk ? 'bhk-col' : ""}`} onClick={handleFilterThree}>3 BHK</button>
                 </div>
             </div>
             {/* <img src={heart} className="text-danger bg-white" alt=""/> */}

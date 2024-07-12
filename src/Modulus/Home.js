@@ -58,10 +58,14 @@ export const Home = ()=>{
             <Agents location={location}/>
             </>
 
+
+            {/* Subscribe Section */}
             <>
              <Subscribe/>
             </>
 
+
+            {/* Footer Section */}
             <>
             <Footer/>
             </>
