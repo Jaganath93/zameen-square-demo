@@ -9,6 +9,7 @@ import { Plots } from "../Components/Plots";
 import { Projects } from "../Components/Projects";
 import { Slider } from "../Components/Slider";
 import { Subscribe } from "../Components/Subscribe";
+import { Footer } from "../Components/Footer";
 
 
 export const Home = ()=>{
@@ -59,6 +60,10 @@ export const Home = ()=>{
 
             <>
              <Subscribe/>
+            </>
+
+            <>
+            <Footer/>
             </>
         </div>
     );
