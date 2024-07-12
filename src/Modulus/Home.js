@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Agents } from "../Components/Agents";
 import { Apartments } from "../Components/Apartments";
 import { Commercials } from "../Components/Commercials";
-import { Demo } from "../Components/Demo";
 import { NavBar } from "../Components/NavBar";
 import { Office } from "../Components/Office";
 import { Plots } from "../Components/Plots";

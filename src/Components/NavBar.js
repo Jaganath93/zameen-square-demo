@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { data } from "../data";
 
 
@@ -23,13 +22,13 @@ export const NavBar = ({location,setLocation})=>{
       <img src={logo_md} alt="Logo" className="d-inline-block align-text-top d-block d-lg-none nav-logo"/>
       </div>
       <div className="mt-2">
-      <div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle bg-white text-dark border-0 ms-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      <div className="dropdown">
+  <a className="btn btn-secondary dropdown-toggle bg-white text-dark border-0 ms-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
     {location}
   </a>
 
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    {data.map((dt,i)=> <li class="dropdown-item" key={i} onClick={()=>handleLocation(dt.location)}>{dt.location}</li>)}
+  <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    {data.map((dt,i)=> <li className="dropdown-item" key={i} onClick={()=>handleLocation(dt.location)}>{dt.location}</li>)}
   </ul>
 </div>
       </div>

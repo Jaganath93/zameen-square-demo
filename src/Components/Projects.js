@@ -11,7 +11,7 @@ export const Projects = ({location})=>{
     const [apartment, setApartMents] = useState([]);
 
     useEffect(()=>{         
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         // const storedLocation = filteredData[0].location;
         // setLocation(storedLocation);
         const filteredDescription = filteredData[0].projects.description;
@@ -39,7 +39,7 @@ export const Projects = ({location})=>{
                 <p className="text-muted text-center px-5">{description}</p>
             </div>
 
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
                 
             <AliceCarousel
         mouseTracking

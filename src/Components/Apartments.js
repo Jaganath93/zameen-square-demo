@@ -12,7 +12,7 @@ export const Apartments = ({location})=>{
     const [threeBhk, setThreeBhk] = useState(false);
 
     useEffect(()=>{
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         const mysApartments = filteredData[0].apartments;
         setApartMents(mysApartments);
     },[location]);
@@ -21,9 +21,9 @@ export const Apartments = ({location})=>{
         setThreeBhk(false);
         setAll(false);
         setTwoBhk(true);
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         const apartmentArray = filteredData[0].apartments;
-        const apartmentTwoBhk = apartmentArray?.filter((apt)=> apt.bhk == "2");
+        const apartmentTwoBhk = apartmentArray?.filter((apt)=> apt.bhk === 2);
         if(apartmentTwoBhk.length>0) setApartMents(apartmentTwoBhk) 
     }
 
@@ -31,9 +31,9 @@ export const Apartments = ({location})=>{
         setTwoBhk(false);
         setAll(false);
         setThreeBhk(true);
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         const apartmentArray = filteredData[0].apartments;
-        const apartmentThreeBhk = apartmentArray?.filter((apt)=> apt.bhk == "3");
+        const apartmentThreeBhk = apartmentArray?.filter((apt)=> apt.bhk ===3);
         if(apartmentThreeBhk.length>0) setApartMents(apartmentThreeBhk) 
     };
 
@@ -41,7 +41,7 @@ export const Apartments = ({location})=>{
         setTwoBhk(false);
         setThreeBhk(false);
         setAll(true);
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         const apartmentArray = filteredData[0].apartments;
         setApartMents(apartmentArray)
     }
@@ -53,8 +53,10 @@ export const Apartments = ({location})=>{
 
     const responsive = {
         0: { items: 1 },
-        568: { items: 2 },
-        1024: { items: 3.5 },
+        568: { items: 1.5 },
+        713: {items:2},
+        1024: { items: 2.5 },
+        1200: {items:3.5}
     };
 
     const carouselData = apartment.map((apt,i)=> <Cards data={apt} key={i} bhk={true}/>)
@@ -63,14 +65,14 @@ export const Apartments = ({location})=>{
 
     return(
         <div className="container-fluid">
-            <div className="row mt-5 pt-5">
+            <div className="row mt-md-5 pt-5">
                 <div className="col-12 col-sm-8 col-md-6 col-lg-5">
                 <h3 className="fw-normal">Popular Apartment in {location}</h3>
                 </div>
                 <div className="d-none d-sm-block col-4 col-md-6">
-                    <button className={`border-0 ${all ? 'bhk-col' : ""}`} onClick={handleFilterAll}>All</button>
-                    <button className={`ms-1 ms-md-3 border-0 ${twoBhk ? 'bhk-col' : ""}`} onClick={handleFilterTwo}>2 BHK</button>
-                    <button className={`ms-1 ms-md-3 border-0 ${threeBhk ? 'bhk-col' : ""}`} onClick={handleFilterThree}>3 BHK</button>
+                    <button className={`border-0 rounded-2 ${all ? 'bhk-col' : ""}`} onClick={handleFilterAll}>All</button>
+                    <button className={`ms-1 ms-md-3 border-0 rounded-2 ${twoBhk ? 'bhk-col' : ""}`} onClick={handleFilterTwo}>2 BHK</button>
+                    <button className={`ms-1 ms-md-3 border-0 rounded-2 ${threeBhk ? 'bhk-col' : ""}`} onClick={handleFilterThree}>3 BHK</button>
                 </div>
             </div>
             {/* <img src={heart} className="text-danger bg-white" alt=""/> */}

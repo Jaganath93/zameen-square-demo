@@ -13,7 +13,7 @@ export const Commercials = ({location})=>{
     const [sqft2, setSqft2] = useState(false);
 
     useEffect(()=>{
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         const myPlots = filteredData[0].commercials;
         setApartMents(myPlots);
     },[location]);
@@ -22,7 +22,7 @@ export const Commercials = ({location})=>{
         setSqft2(false);
         setAll(false)
         setSqft1(true);
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         const apartmentArray = filteredData[0].commercials;
         const apartmentTwoBhk = apartmentArray?.filter((apt)=> apt.sqft > 1199);
         if(apartmentTwoBhk.length>0) setApartMents(apartmentTwoBhk); 
@@ -32,7 +32,7 @@ export const Commercials = ({location})=>{
         setSqft1(false);
         setAll(false);
         setSqft2(true);
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         const apartmentArray = filteredData[0].commercials;
         const apartmentThreeBhk = apartmentArray?.filter((apt)=> apt.sqft> 2399);
         if(apartmentThreeBhk.length>0) setApartMents(apartmentThreeBhk); 
@@ -42,7 +42,7 @@ export const Commercials = ({location})=>{
         setSqft1(false);
         setSqft2(false);
         setAll(true);
-        const filteredData = data.filter((dt)=>dt.location == location);
+        const filteredData = data.filter((dt)=>dt.location === location);
         const apartmentArray = filteredData[0].commercials;
         setApartMents(apartmentArray);
     }
@@ -51,8 +51,10 @@ export const Commercials = ({location})=>{
 
     const responsive = {
         0: { items: 1 },
-        568: { items: 2 },
-        1024: { items: 3.5 },
+        568: { items: 1.5 },
+        713: {items:2},
+        1024: { items: 2.5 },
+        1200: {items:3.5}
     };
 
     const carouselData = apartment.map((apt,i)=> <Cards data={apt} key={i} bhk={false}/>)
@@ -68,9 +70,9 @@ export const Commercials = ({location})=>{
                 <h3 className="fw-normal">Commercials in {location}</h3>
                 </div>
                 <div className="d-none d-sm-block col-4 col-md-6">
-                <button className={`border-0 ${all ? 'bhk-col' : ""}`} onClick={handleFilterAll}>All</button>
-                    <button className={`ms-1 ms-md-3 border-0 ${sqft1 ? 'bhk-col' : ""}`} onClick={handleFilterTwo}>1200 Sqft</button>
-                    <button className={`ms-1 ms-md-3 border-0 ${sqft2 ? 'bhk-col' : ""}`} onClick={handleFilterThree}>2400 Sqft</button>
+                <button className={`border-0 rounded-2 ${all ? 'bhk-col' : ""}`} onClick={handleFilterAll}>All</button>
+                    <button className={`ms-1 ms-md-3 border-0 rounded-2 ${sqft1 ? 'bhk-col' : ""}`} onClick={handleFilterTwo}>1200 Sqft</button>
+                    <button className={`ms-1 ms-md-3 border-0 rounded-2 ${sqft2 ? 'bhk-col' : ""}`} onClick={handleFilterThree}>2400 Sqft</button>
                 </div>
             </div>
             {/* <img src={heart} className="text-danger bg-white" alt=""/> */}
