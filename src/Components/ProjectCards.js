@@ -17,6 +17,6 @@ export const ProjectCards = ({apt})=>{
                       </div>
                       </div>
                     </div>
-                                 </div>
+                  </div>
     );
 };

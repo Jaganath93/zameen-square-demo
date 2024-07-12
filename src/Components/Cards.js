@@ -41,8 +41,8 @@ export const Cards = ({data,bhk})=>{
                             </div>
                          <div className="d-flex justify-content-between mb-0">
                             <div>
-                                <h6 className="text-muted">Listed On</h6>
-                                <p>{data.listedOn}</p>
+                                <h6 className="text-muted opacity-50">Listed On</h6>
+                                <p className="fw-bolder">{data.listedOn}</p>
                             </div>
                          <div><button href="#" className="btn btn-primary">View Details</button></div>
                          </div>
@@ -78,8 +78,8 @@ export const Cards = ({data,bhk})=>{
                             </div> */}
                          <div className="d-flex justify-content-between">
                             <div>
-                                <h6 className="text-muted">Listed On</h6>
-                                <p>{data.listedOn}</p>
+                                <h6 className="text-muted opacity-50">Listed On</h6>
+                                <p className="fw-bolder">{data.listedOn}</p>
                             </div>
                          <div>
                          <button href="#" className="btn btn-primary">View Details</button>
