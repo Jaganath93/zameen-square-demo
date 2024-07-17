@@ -1,6 +1,7 @@
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export const Cards = ({data,bhk})=>{
@@ -10,7 +11,9 @@ export const Cards = ({data,bhk})=>{
       if(id===data.id)  disLike(!like);
     }
 
-    const handleDragStart = (e) => e.preventDefault()
+    const handleDragStart = (e) => e.preventDefault();
+
+    const navigate = useNavigate();
 
     return( bhk ?
         <div className="col">
@@ -44,7 +47,7 @@ export const Cards = ({data,bhk})=>{
                                 <h6 className="text-muted opacity-50">Listed On</h6>
                                 <p className="fw-bolder">{data.listedOn}</p>
                             </div>
-                         <div><button href="#" className="btn btn-primary">View Details</button></div>
+                         <div><button href="#" className="btn btn-primary" onClick={()=> navigate(`/properties/${data.id}`)}>View Details</button></div>
                          </div>
                     </div>
                </div>
@@ -82,7 +85,7 @@ export const Cards = ({data,bhk})=>{
                                 <p className="fw-bolder">{data.listedOn}</p>
                             </div>
                          <div>
-                         <button href="#" className="btn btn-primary">View Details</button>
+                         <button href="#" className="btn btn-primary" onClick={()=> navigate(`/properties/${data.id}`)}>View Details</button>
                          </div>
                          </div>
                     </div>

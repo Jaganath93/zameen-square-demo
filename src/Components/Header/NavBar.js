@@ -1,4 +1,4 @@
-import { data } from "../data";
+import { data } from "../../data";
 
 
 export const NavBar = ({location,setLocation})=>{
@@ -15,7 +15,7 @@ export const NavBar = ({location,setLocation})=>{
     return(
         <nav className="navbar navbar-expand-md bg-body-tertiary fixed-top bg-light">
   <div className="container-fluid">
-  <a className="navbar-brand" href="#">
+  <a className="navbar-brand">
     <div className="d-flex justify-content-between">
       <div>
       <img src={logo} alt="Logo" className="d-inline-block align-text-top d-none d-lg-block nav-logo"/>
@@ -23,12 +23,12 @@ export const NavBar = ({location,setLocation})=>{
       </div>
       <div className="mt-2">
       <div className="dropdown">
-  <a className="btn btn-secondary dropdown-toggle bg-white text-dark border-0 ms-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+  <a className="btn btn-secondary dropdown-toggle bg-white text-dark border-0 ms-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
     {location}
   </a>
 
   <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    {data.map((dt,i)=> <li className="dropdown-item" key={i} onClick={()=>handleLocation(dt.location)}>{dt.location}</li>)}
+    {data.map((dt,i)=> <li className="dropdown-item" key={i} role="button" onClick={()=>handleLocation(dt.location)}>{dt.location}</li>)}
   </ul>
 </div>
       </div>
@@ -41,13 +41,13 @@ export const NavBar = ({location,setLocation})=>{
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item me-4">
-          <a className="nav-link text-primary" aria-current="page" href="#">Buy</a>
+          <a className="nav-link text-primary" aria-current="page">Buy</a>
         </li>
         <li className="nav-item me-4">
-          <a className="nav-link text-primary" href="#">Rent</a>
+          <a className="nav-link text-primary">Rent</a>
         </li>
         <li className="nav-item me-4">
-          <a className="nav-link text-primary" href="#">Sell</a>
+          <a className="nav-link text-primary" >Sell</a>
         </li>
       </ul>
       {/* <div className="d-flex"> */}

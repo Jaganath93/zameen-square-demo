@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { data } from "../data";
-import { Cards } from "./Cards";
+import { data } from "../../data";
+import { Cards } from "../Cards";
 // import  heart from "../images/heart-fill.svg";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { data } from "../data";
+import { data } from "../../data";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { ProjectCards } from "./ProjectCards";

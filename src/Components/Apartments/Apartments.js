@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { data } from "../data";
-import { Cards } from "./Cards";
+import { data } from "../../data";
+import { Cards } from "../Cards";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
@@ -10,6 +10,7 @@ export const Apartments = ({location})=>{
     const [all, setAll] = useState(true);
     const [twoBhk, setTwoBhk] = useState(false);
     const [threeBhk, setThreeBhk] = useState(false);
+    
 
     useEffect(()=>{
         const filteredData = data.filter((dt)=>dt.location === location);
