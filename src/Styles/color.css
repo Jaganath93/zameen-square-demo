@@ -11,3 +11,20 @@
 .footer-btn{
     background-color: #50BF97;
 }
+
+.profile-btn{
+    background-color: #1D72DB;
+}
+
+.profile-num{
+    color: #013EA3;
+}
+
+.prop-status-1{
+    background-color: rgb(252, 166, 135);
+    color: orangered;
+}
+
+.prop-status-2{
+    background-color: rgb(125, 184, 125);
+}

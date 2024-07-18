@@ -1,13 +1,17 @@
 
-export const PropertyDetail = ()=>{
+
+
+export const PropertyCard = ()=>{
 
     return(
-        <div className="d-flex justify-content-between">
-            
-            <div class="card me-3 border-0 rounded" style={{minWidth:'18rem'}}>
+        <div class="card me-3 border-0 rounded shadow" style={{minWidth:'18rem'}}>
             <div class="card-body">
+    <div className="d-flex">
     <h5 class="card-title">
       3BHK Apartment in Vijayanagar, Mysuru</h5>
+      {/* <p className="ms-2 px-2 prop-status-1 fw-bold rounded">Project by Brigade</p>
+      <p className="ms-2 px-2 prop-status-2 text-success fw-bolder rounded">Ready to move</p> */}
+    </div>
     <p class="card-text text-muted">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" style={{color:'#1D72DB'}} viewBox="0 0 16 16">
   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -61,7 +65,7 @@ export const PropertyDetail = ()=>{
     </div>
   </div>
 </div>
-            <div>How U doing</div>
-        </div>
     );
 };
+
+// https://zameensquare.com/_next/static/media/Build_up_area.90df2d0e.svg

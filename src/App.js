@@ -4,7 +4,7 @@ import "./Styles/font.css";
 import "./Styles/color.css";
 import { Routes,Route } from "react-router-dom";
 import { Footer } from "./Components/Footer";
-import { PropertyDetail } from "./Components/PropertyDetail";
+import { PropertyDetail } from "./Modulus/PropertyDetail";
 
 function App() {
   return (
