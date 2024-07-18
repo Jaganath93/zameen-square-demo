@@ -1,4 +1,5 @@
 import { About } from "../Components/ProjectDetail/LeftPart/About";
+import { MoreProperties } from "../Components/ProjectDetail/LeftPart/MoreProperties";
 import { PropertyCard } from "../Components/ProjectDetail/LeftPart/PropertyCard";
 import { Contact } from "../Components/ProjectDetail/RightPart/Contact";
 import { Profile } from "../Components/ProjectDetail/RightPart/Profile";
@@ -12,6 +13,8 @@ export const PropertyDetail = ()=>{
             <div>
             <PropertyCard/>
             <About/>
+            {/* <>
+            <MoreProperties/></> */}
             </div>
 
             {/* Right */}
