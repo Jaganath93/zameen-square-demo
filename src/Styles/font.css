@@ -2,3 +2,11 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: whitesmoke;
 }
+
+.about-prop{
+    font-size: 10px;
+}
+
+.about-prop-status{
+    font-size: 14px;
+}

@@ -16,10 +16,10 @@ export const MoreProperties = ()=>{
 
     const responsive = {
         0: { items: 1 },
-        568: { items: 1.5 },
-        713: {items:2},
-        1024: { items: 2.5 },
-        1200: {items:3.5}
+        568: { items: 1 },
+        713: {items:1.5},
+        1024: { items: 2 },
+        1200: {items:3}
     };
 
     const carouselData = apartment.map((apt,i)=> <Cards data={apt} key={i} bhk={true}/>)
@@ -27,9 +27,11 @@ export const MoreProperties = ()=>{
     const items = [...(carouselData)];
 
     return(
-        <div>
+        <div className='bg-white rounded shadow'>
+           
             {/* Carousel */}
-            <div className="row mt-5">      
+            <div className="row mt-5">
+            <p className='mt-3 ms-2'>See More Properties By <span className='text-primary'>Bhasker G</span></p>      
                 <AliceCarousel
         mouseTracking
         items={items}

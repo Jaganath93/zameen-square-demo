@@ -4,16 +4,16 @@
 export const PropertyCard = ()=>{
 
     return(
-        <div class="card me-3 border-0 rounded shadow" style={{minWidth:'18rem'}}>
+        <div class="card me-3 border-0 rounded shadow">
             <div class="card-body">
     <div className="d-flex">
-    <h5 class="card-title">
+    <h5 class="card-title h6 lg-h5">
       3BHK Apartment in Vijayanagar, Mysuru</h5>
       {/* <p className="ms-2 px-2 prop-status-1 fw-bold rounded">Project by Brigade</p>
       <p className="ms-2 px-2 prop-status-2 text-success fw-bolder rounded">Ready to move</p> */}
     </div>
     <p class="card-text text-muted">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" style={{color:'#1D72DB'}} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-geo-alt-fill" style={{color:'#1D72DB'}} viewBox="0 0 16 16">
   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
 </svg>
       2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Mysuru, Karnataka 570017</p>
@@ -41,20 +41,20 @@ export const PropertyCard = ()=>{
     <img src="https://s3-alpha-sig.figma.com/img/2f0d/b49b/cc241dcdfc833f2eaaa9b2045a316853?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R~ETr~Q1bbUiWKwP7u2MeHeildyvM~wM1RzizU3rlnqzXS6fg-~quT-gfOLRHGHSQ3S23JTUD~f6ZetW52QNYNJp-u7c3TOqTlYvFE0wOhJTa0J~IPQq8fi8JvTUcs-Tk~ytXof4myurNqEtDyjLDjaOYZklLTboN3-IWfV71hwSf5awY3-A4ZCi-V2u8c51RroGPyEchDbWMyCEIRtFY--x6qVpM7o2c63PaQnojnqZoqW6lSbmEjnuofbwDolI3wvlpdLOLryZbcplKJAqTczTjhU~IPJLPcpw1K6Jkgzxciqb14ntpPi8~UqjtshV3yqR2FSLkoaddh-tT4rrtw__" class="card-img-top h-100 rounded" alt="..."/>
     </div>
   </div>
-  <div class="card-body d-flex justify-content-between">
+  <div class="card-body d-flex flex-column flex-md-row justify-content-between">
     <div className="d-flex align-items-center">
-    <h4 class="card-title me-2 text-primary fw-bolder">₹ 70Lac</h4>
-    <p class="card-text text-muted fw-light">₹ 2920 per Sqft</p>
+    <h4 class="card-title me-2 text-primary fw-bolder h5">₹ 70Lac</h4>
+    <p class="card-text text-muted fw-light h6">₹ 2920 per Sqft</p>
     </div>
     <div className="row">
     <div className="col">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
   <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
 </svg>
     </div>
     {/* <button className="border-0 rounded-circle"> */}
     <div className="col">
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telegram text-secondary" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-telegram text-secondary" viewBox="0 0 16 16">
   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
 </svg>
     </div>
