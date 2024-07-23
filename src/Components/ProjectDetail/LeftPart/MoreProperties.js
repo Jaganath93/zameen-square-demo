@@ -16,7 +16,7 @@ export const MoreProperties = ()=>{
 
     const responsive = {
         0: { items: 1 },
-        568: { items: 1 },
+        568: { items: 1.5 },
         713: {items:1.5},
         1024: { items: 2 },
         1200: {items:3}
@@ -30,7 +30,7 @@ export const MoreProperties = ()=>{
         <div className='bg-white rounded shadow'>
            
             {/* Carousel */}
-            <div className="row mt-5">
+            <div className="row mt-5 px-2">
             <p className='mt-3 ms-2'>See More Properties By <span className='text-primary'>Bhasker G</span></p>      
                 <AliceCarousel
         mouseTracking

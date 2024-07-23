@@ -4,7 +4,7 @@
 export const PropertyCard = ()=>{
 
     return(
-        <div class="card me-3 border-0 rounded shadow">
+        <div class="card me-3 border-0 rounded shadow w-100 w-md-75">
             <div class="card-body">
     <div className="d-flex">
     <h5 class="card-title h6 lg-h5">
